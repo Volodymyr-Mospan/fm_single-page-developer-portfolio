@@ -13,42 +13,61 @@
 
     <title>Frontend Mentor | Single-page developer portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
+    <!-- ++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++ -->
+
+    <header class="container">
       <nav>
         <a class="logo" href="#">adamkeyes</a>
 
-        <ul>
+        <ul class="social-link-list">
           <li>
             <a href="#">
-              <svg width="24" hight="24">
-                <use href=""></use>
+              <svg width="24" height="24">
+                <use href="./assets/images/icons.svg#icon-icon-github"></use>
               </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <svg>
-                <use href=""></use>
+              <svg width="24" height="24">
+                <use
+                  href="./assets/images/icons.svg#icon-icon-frontend-mentor"
+                ></use>
               </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <svg>
-                <use href=""></use>
+              <svg width="24" height="24">
+                <use href="./assets/images/icons.svg#icon-icon-linkedin"></use>
               </svg>
             </a>
           </li>
 
           <li>
             <a href="#">
-              <svg>
-                <use href=""></use>
+              <svg width="24" height="24">
+                <use href="./assets/images/icons.svg#icon-icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -56,8 +75,28 @@
       </nav>
     </header>
 
-    adamkeyes Nice to meet you! I'm Adam Keyes. Based in the UK, I'm a front-end
-    developer passionate about building accessible web apps that users love.
+    <!-- ++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++ -->
+
+    <main>
+      <!-- ++++++++++++++++++++++++++ Herro ++++++++++++++++++++++++++ -->
+
+      <section>
+        <div class="container">
+          <h1 class="title hero-title">
+            Nice to meet you! I'm <span class="name">Adam Keyes</span>.
+          </h1>
+          <p class="summary">
+            Based in the UK, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+
+          <a href="#contact"></a>
+        </div>
+      </section>
+
+      <!-- ++++++++++++++++++++++++++ Herro ++++++++++++++++++++++++++ -->
+    </main>
+
     Contact me HTML 4 Years Experience CSS 4 Years Experience JavaScript 4 Years
     Experience Accessibility 4 Years Experience React 3 Years Experience Sass 3
     Years Experience Projects Contact me Design portfolio HTML CSS View project
