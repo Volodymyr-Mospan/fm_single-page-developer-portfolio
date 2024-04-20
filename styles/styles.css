@@ -8,6 +8,17 @@
   --main-font-family: "Space Grotesk", sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   background-color: var(--main-bg-color);
 
@@ -37,11 +48,14 @@ h5 {
   padding: 0;
 }
 
+section {
+  padding: 0 15px;
+}
+
 .container {
   position: relative;
 
-  max-width: 1140px;
-  padding: 0 15px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,24 +68,30 @@ h5 {
   color: var(--title-text-color);
 }
 
+.sub-title {
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: -1.5px;
+}
+
 /* ++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++*/
 
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 
   width: 100%;
+  padding-top: 39px;
+  padding-bottom: 39px;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 39px;
   padding-right: 29px;
-  padding-bottom: 39px;
 }
 
 .logo {
@@ -84,7 +104,12 @@ header {
 
 .social-link-list {
   display: flex;
+  align-items: center;
   column-gap: 32px;
+}
+
+.social-link-list li {
+  line-height: 0;
 }
 
 /* ++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++ */
@@ -106,17 +131,19 @@ header {
   content: "";
   position: absolute;
   transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 
   width: 530px;
   height: 129px;
   background-image: url(../assets/images/pattern-rings.svg);
 }
 
-.name {
+.hero-name {
   position: relative;
 }
 
-.name::after {
+.hero-name::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -127,12 +154,12 @@ header {
   background-color: var(--accent-color);
 }
 
-.summary {
+.hero-summary {
   max-width: 445px;
   margin-bottom: 70px;
 }
 
-.contact {
+.contact-me {
   position: relative;
 
   font-weight: 700;
@@ -155,7 +182,41 @@ header {
 
 .user-photo {
   position: absolute;
-  z-index: -1;
-  right: 15px;
+  z-index: -2;
+  right: 0;
   top: 0;
+}
+
+/* ++++++++++++++++++++++++++ Herro ++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++ Experience ++++++++++++++++++++++++++ */
+
+.experience-container {
+  position: relative;
+  padding-top: 73px;
+
+  border-top: 1px solid #f2f2f2;
+}
+
+.experience-container::before {
+  content: "";
+  position: absolute;
+  transform: translate(404px, 55px);
+  bottom: 0;
+  right: 0;
+
+  width: 530px;
+  height: 129px;
+  background-image: url(../assets/images/pattern-rings.svg);
+}
+
+.technology-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.technology {
+  flex-basis: 345px;
 }
