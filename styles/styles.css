@@ -174,7 +174,7 @@ h5 {
   text-decoration: underline solid 2px var(--accent-color);
   text-underline-offset: 17px;
 
-  transition: color 250ms ease-in;
+  transition: color 250ms ease-out;
 }
 
 .contact-me:hover,
@@ -287,7 +287,7 @@ h5 {
   background: hwb(0 0% 100% / 0.75);
   opacity: 0;
 
-  transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-out;
 }
 
 .project:hover .project-overlay,
@@ -306,7 +306,7 @@ h5 {
   text-decoration: underline solid 2px var(--accent-color);
   text-underline-offset: 10px;
 
-  transition: color 250ms ease-in;
+  transition: color 250ms ease-out;
 }
 
 .project-link:hover,
@@ -333,3 +333,25 @@ h5 {
 /* ++++++++++++++++++++++++++ Projects ++++++++++++++++++++++++++ */
 
 /* ++++++++++++++++++++++++++ Footere ++++++++++++++++++++++++++ */
+
+.footer {
+  padding-top: 84px;
+
+  background-color: var(--second-text-color);
+}
+
+.footer-positioning {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 445px;
+}
+
+.form {
+  max-width: 445px;
+}
