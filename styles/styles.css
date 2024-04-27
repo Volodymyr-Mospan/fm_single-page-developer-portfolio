@@ -29,12 +29,15 @@ body {
   line-height: 1.56;
 
   color: var(--main-text-color);
+
+  overflow-x: hidden;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 a,
@@ -51,8 +54,6 @@ h5 {
 
 .section {
   padding: 0 30px;
-
-  overflow: hidden;
 }
 
 .container {
@@ -149,9 +150,9 @@ h5 {
 .hero-title::before {
   content: url(../assets/images/pattern-rings.svg);
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -61px);
+  top: -61px;
+  left: -265px;
+
   line-height: 0;
 }
 
@@ -198,11 +199,26 @@ h5 {
   color: var(--accent-color);
 }
 
-.user-photo {
+.herro-img-wrapper {
   position: absolute;
   z-index: -2;
   right: 0;
   top: 0;
+
+  line-height: 0;
+}
+
+.herro-img-wrapper::after {
+  content: " ";
+  position: absolute;
+  bottom: 70px;
+  left: -64px;
+
+  width: 129px;
+  height: 129px;
+
+  border: 1px solid var(--title-text-color);
+  border-radius: 50%;
 }
 
 /* ++++++++++++++++++++++++++ Herro ++++++++++++++++++++++++++ */
@@ -221,9 +237,8 @@ h5 {
 .experience-container::after {
   content: url(../assets/images/pattern-rings.svg);
   position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(404px, -15px);
+  bottom: 15px;
+  right: -404px;
   line-height: 0;
 }
 
@@ -355,13 +370,22 @@ h5 {
   background-color: var(--second-text-color);
 }
 
-.footer-positioning {
+.footer-form {
+  position: relative;
   display: flex;
   justify-content: space-between;
 
   padding-bottom: 92px;
 
   border-bottom: 1px solid var(--title-text-color);
+}
+
+.footer-form::after {
+  content: url(../assets/images/pattern-rings.svg);
+  position: absolute;
+  bottom: 47px;
+  left: -370px;
+  line-height: 0;
 }
 
 .footer-text-container {
@@ -371,7 +395,7 @@ h5 {
   max-width: 445px;
 }
 
-.form {
+.footer-form-container {
   max-width: 445px;
   width: 100%;
 
