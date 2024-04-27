@@ -51,6 +51,8 @@ h5 {
 
 .section {
   padding: 0 30px;
+
+  overflow: hidden;
 }
 
 .container {
@@ -129,15 +131,12 @@ h5 {
 }
 
 .hero-title::before {
-  content: "";
+  content: url(../assets/images/pattern-rings.svg);
   position: absolute;
-  transform: translate(-50%, -50%);
   top: 0;
   left: 0;
-
-  width: 530px;
-  height: 129px;
-  background-image: url(../assets/images/pattern-rings.svg);
+  transform: translate(-50%, -61px);
+  line-height: 0;
 }
 
 .hero-name {
@@ -195,24 +194,21 @@ h5 {
 /* ++++++++++++++++++++++++++ Experience ++++++++++++++++++++++++++ */
 
 .experience-container {
-  max-width: 1110px;
   position: relative;
+  max-width: 1110px;
   padding-top: 73px;
   padding-bottom: 70px;
 
   border-top: 1px solid var(--title-text-color);
 }
 
-.experience-container::before {
-  content: "";
+.experience-container::after {
+  content: url(../assets/images/pattern-rings.svg);
   position: absolute;
-  /* transform: translate(404px, 55px); */
   bottom: 0;
   right: 0;
-
-  width: 530px;
-  height: 129px;
-  background-image: url(../assets/images/pattern-rings.svg);
+  transform: translate(404px, -15px);
+  line-height: 0;
 }
 
 .technology-list {
