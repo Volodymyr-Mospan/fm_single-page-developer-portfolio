@@ -4,6 +4,7 @@
   --accent-color: #4ee1a0;
   --main-text-color: #d9d9d9;
   --title-text-color: #fff;
+  --border-color: #979797;
 
   --main-font-family: "Space Grotesk", sans-serif;
 }
@@ -194,17 +195,18 @@ h5 {
 /* ++++++++++++++++++++++++++ Experience ++++++++++++++++++++++++++ */
 
 .experience-container {
+  max-width: 1110px;
   position: relative;
   padding-top: 73px;
   padding-bottom: 70px;
 
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid var(--title-text-color);
 }
 
 .experience-container::before {
   content: "";
   position: absolute;
-  transform: translate(404px, 55px);
+  /* transform: translate(404px, 55px); */
   bottom: 0;
   right: 0;
 
@@ -213,7 +215,7 @@ h5 {
   background-image: url(../assets/images/pattern-rings.svg);
 }
 
-.technology-list {
+.technology-list {yles
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -304,7 +306,7 @@ h5 {
 
   text-transform: uppercase;
   text-decoration: underline solid 2px var(--accent-color);
-  text-underline-offset: 10px;
+  text-underline-offset: 12px;
 
   transition: color 250ms ease-out;
 }
@@ -343,6 +345,10 @@ h5 {
 .footer-positioning {
   display: flex;
   justify-content: space-between;
+
+  padding-bottom: 105px;
+
+  border-bottom: 1px solid var(--title-text-color);
 }
 
 .footer-text-container {
@@ -354,4 +360,41 @@ h5 {
 
 .form {
   max-width: 445px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
+.input,
+.input-message,
+.form-btn {
+  padding: 0 24px 17px;
+
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+
+  outline: none;
+  background-color: inherit;
+  border: none;
+}
+
+.input,
+.input-message {
+  border-bottom: 1px solid var(--title-text-color);
+}
+
+/* .form-btn {
+  display: flex;
+  padding: 0;
+  min-height: 38px;
+
+  text-transform: uppercase;
+  text-decoration: underline solid 2px var(--accent-color);
+  text-underline-offset: 18px;
+} */
