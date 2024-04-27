@@ -215,7 +215,7 @@ h5 {
   background-image: url(../assets/images/pattern-rings.svg);
 }
 
-.technology-list {yles
+.technology-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
