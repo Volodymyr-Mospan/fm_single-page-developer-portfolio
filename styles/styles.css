@@ -90,7 +90,7 @@ h5 {
   padding-bottom: 39px;
 }
 
-.navigation {
+.nav {
   display: flex;
   justify-content: space-between;
 
@@ -103,16 +103,32 @@ h5 {
   line-height: 1;
   letter-spacing: -0.01em;
   color: var(--title-text-color);
+  transition: color 250ms ease-out;
 }
 
-.social-link-list {
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.social-list {
   display: flex;
-  align-items: center;
   column-gap: 32px;
 }
 
-.social-link-list li {
-  line-height: 0;
+.social-link {
+  display: flex;
+  height: 32px;
+
+  align-items: center;
+
+  fill: var(--title-text-color);
+  transition: fill 250ms ease-out;
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--accent-color);
 }
 
 /* ++++++++++++++++++++++++++ Header ++++++++++++++++++++++++++ */
@@ -257,8 +273,8 @@ h5 {
   justify-content: center;
   align-items: center;
 
-  width: 540px;
-  height: 400px;
+  max-width: 540px;
+  max-height: 400px;
   margin-bottom: 20px;
 
   overflow: hidden;
@@ -334,6 +350,7 @@ h5 {
 
 .footer {
   padding-top: 84px;
+  padding-bottom: 92px;
 
   background-color: var(--second-text-color);
 }
@@ -366,8 +383,9 @@ h5 {
 .input,
 .input-message,
 .form-btn {
-  padding: 0 24px 17px;
+  padding: 0 24px 16px;
 
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: -0.01em;
@@ -384,14 +402,31 @@ h5 {
   border-bottom: 1px solid var(--title-text-color);
 }
 
+.input-message {
+  height: 107px;
+
+  resize: none;
+}
+
 .form-btn {
   padding: 0 0 12px;
-  /* min-height: 38px; */
   align-self: flex-end;
 
-  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
   text-decoration: underline solid 2px var(--accent-color);
   text-underline-offset: 18px;
 
+  transition: color 250ms ease-out;
   cursor: pointer;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  color: var(--accent-color);
+}
+
+.footer-nav {
+  padding: 47px 0 0 0;
 }
